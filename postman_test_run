@@ -1,0 +1,266 @@
+{
+	"id": "f915ab33-7378-419a-a8f3-58ab91ce83ed",
+	"name": "APICollection",
+	"timestamp": "2023-04-22T19:36:49.277Z",
+	"collection_id": "24297618-34656caa-cd81-425f-bd00-437f83702847",
+	"folder_id": 0,
+	"environment_id": "24297618-94ff33a1-412b-4279-9a56-eb31fa782a48",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2023-04-22T19:36:37.228Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "26259fd3-a409-4235-beda-237c8b3591c1",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 928,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Status code name should have an OK string": true,
+				"confirm that apiVersion is 6.3.8.0": true,
+				"confirm that title should be Fusio": true,
+				"confirm that the payment currency is EUR": true,
+				"confirm that the categories contain authorization": true,
+				"confirm that the categories contain default": true,
+				"confirm that the categories contain consumer": true,
+				"confirm that the categories contain backend": true,
+				"confirm that the categories contain system": true,
+				"confirm that title/body contain fusio": true,
+				"confirm that title/body contain authorization": true,
+				"Response time is morethan 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that apiVersion is 6.3.8.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that title should be Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the payment currency is EUR": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories contain authorization": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories contain default": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories contain consumer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories contain backend": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that the categories contain system": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that title/body contain fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that title/body contain authorization": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is morethan 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				928
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Status code name should have an OK string": true,
+					"confirm that apiVersion is 6.3.8.0": true,
+					"confirm that title should be Fusio": true,
+					"confirm that the payment currency is EUR": true,
+					"confirm that the categories contain authorization": true,
+					"confirm that the categories contain default": true,
+					"confirm that the categories contain consumer": true,
+					"confirm that the categories contain backend": true,
+					"confirm that the categories contain system": true,
+					"confirm that title/body contain fusio": true,
+					"confirm that title/body contain authorization": true,
+					"Response time is morethan 200ms": true
+				}
+			]
+		},
+		{
+			"id": "bb79ecf6-3a75-4716-b17f-54ea8c83ae26",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 387,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				387
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "792df3ec-dcaf-43c1-a0a5-ab248f26876e",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": "https://demo.fusio-project.org/",
+			"time": 369,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				369
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7d7265d5-fbca-4928-9051-d82cdce49738",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 305,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				305
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d25c7883-f2ae-4e46-ad2c-737518f5bdc1",
+			"name": "Get Books - valid book type",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 1336,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1336
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "da740971-134b-472a-8530-4547da33df51",
+			"name": "Get Books - invalid book type",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				422
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a4b494f7-1788-4040-b13d-ab7b02b37a29",
+			"name": "Place a book order - using valid book ID",
+			"url": "https://simple-books-api.glitch.me",
+			"time": 439,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				439
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4186,
+	"collection": {
+		"requests": [
+			{
+				"id": "26259fd3-a409-4235-beda-237c8b3591c1",
+				"method": "GET"
+			},
+			{
+				"id": "bb79ecf6-3a75-4716-b17f-54ea8c83ae26",
+				"method": "GET"
+			},
+			{
+				"id": "792df3ec-dcaf-43c1-a0a5-ab248f26876e",
+				"method": "GET"
+			},
+			{
+				"id": "7d7265d5-fbca-4928-9051-d82cdce49738",
+				"method": "GET"
+			},
+			{
+				"id": "d25c7883-f2ae-4e46-ad2c-737518f5bdc1",
+				"method": "GET"
+			},
+			{
+				"id": "da740971-134b-472a-8530-4547da33df51",
+				"method": "GET"
+			},
+			{
+				"id": "a4b494f7-1788-4040-b13d-ab7b02b37a29",
+				"method": "POST"
+			}
+		]
+	}
+}
